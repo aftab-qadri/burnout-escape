@@ -1271,6 +1271,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 24px;
+    flex-wrap: nowrap;
   }
 
   .footer-logo {
@@ -1282,9 +1284,26 @@
   }
 
   .footer-note {
+    font-size: 13px;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .footer-substack {
+    font-family: 'DM Sans', sans-serif;
     font-size: 12px;
-    color: var(--muted2);
+    font-weight: 400;
+    color: rgba(255,255,255,0.6);
+    text-decoration: underline;
+    text-underline-offset: 3px;
     text-align: right;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  .footer-substack:hover {
+    color: rgba(255,255,255,0.9);
   }
 
   /* ── SECTION LABEL ROW ── */
@@ -1346,6 +1365,7 @@
     .bonus-inner { grid-template-columns: 1fr; }
     .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
     .footer-note { text-align: center; }
+    .footer-substack { text-align: center; }
     .mech-step { grid-template-columns: 48px 1fr; gap: 20px; }
     .hero { padding: 140px 0 100px; }
     nav { padding: 16px 20px; }
@@ -1413,7 +1433,7 @@
         <span class="label">The pattern</span>
       </div>
       <div class="callout-body">
-        <p class="callout-intro">If you're an ethical online expert doing roughly $5k–$30k/month and:</p>
+        <p class="callout-intro">If any of this feels uncomfortably familiar:</p>
 
         <ul class="callout-list">
           <li>People scroll past you without a second thought</li>
@@ -1843,11 +1863,12 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-      <div style="display:flex;align-items:center;gap:8px;opacity:0.5;">
-        <img src="favicon-64.png" alt="" height="22" style="width:auto;display:block;">
-        <span style="font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:400;color:var(--muted);letter-spacing:0.12em;">FULCRUM</span>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <img src="favicon-64.png" alt="Fulcrum" style="width:32px; height:32px;">
+        <span style="font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:400;color:var(--cream);letter-spacing:0.12em;">FULCRUM</span>
       </div>
-      <p class="footer-note">Free session. No pressure. No tricks.<br>Your time is respected.</p>
+      <p class="footer-note">Free session. No pressure. No tricks.</p>
+      <a href="https://aftabalifulcrum.substack.com/p/the-commodity-trap" target="_blank" rel="noopener" class="footer-substack">Substack article: The Commodity Trap →</a>
     </div>
   </div>
 </footer>
