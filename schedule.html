@@ -405,5 +405,18 @@
   </div>
 </footer>
 
+
+<script>
+  function isCalendlyEvent(e) {
+    return e.data && typeof e.data.event === 'string' && e.data.event.indexOf('calendly.') === 0;
+  }
+
+  window.addEventListener('message', function(e) {
+    if (isCalendlyEvent(e) && e.data.event === 'calendly.event_scheduled') {
+      window.location.href = '/thank-you.html';
+    }
+  });
+</script>
+
 </body>
 </html>
