@@ -78,8 +78,8 @@
 
   .label {
     font-family: 'DM Sans', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--gold);
@@ -398,7 +398,7 @@
     max-width: 640px;
   }
 
-  .future-intro-text em { font-style: italic; color: var(--gold); }
+  .future-intro-text em { font-style: italic; color: var(--gold); font-weight: 700; }
 
   .future-scenes {
     display: grid;
@@ -445,6 +445,7 @@
     color: var(--gold);
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1em;
+    font-weight: 700;
   }
 
   .future-close-grid {
@@ -639,7 +640,7 @@
     margin: 0 auto 20px;
   }
 
-  .stuck-verdict-text em { font-style: italic; color: var(--gold); }
+  .stuck-verdict-text em { font-style: italic; color: var(--gold); font-weight: 700; }
 
   .stuck-verdict-sub {
     font-size: 15px;
@@ -911,6 +912,7 @@
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--gold);
+    font-weight: 700;
     margin-bottom: 20px;
   }
 
@@ -948,7 +950,7 @@
   .bonus-value-amount {
     font-family: 'Cormorant Garamond', serif;
     font-size: 52px;
-    font-weight: 300;
+    font-weight: 700;
     color: var(--gold);
     line-height: 1;
     margin-bottom: 4px;
@@ -984,11 +986,13 @@
   .guarantee-block--best .guarantee-block-label { color: var(--gold); }
 
   .guarantee-block-label {
-    font-size: 10px;
+    font-size: 1rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: 24px;
   }
+
+  .guarantee-block--best .guarantee-block-label { font-weight: 700; }
 
   .guarantee-block-text {
     font-family: 'Cormorant Garamond', serif;
@@ -1380,6 +1384,8 @@
     .pricing-details { gap: 24px; }
     .stuck-verdict { padding: 36px 28px; }
     .stuck-fix { padding: 28px; }
+    .guarantee-block-label { font-size: 0.95rem; }
+    .label { font-size: 0.95rem; }
   }
   .cta-friction {
     font-size: 13px;
